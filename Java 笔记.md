@@ -364,7 +364,7 @@ int[] a; //此时 scores 是 null
 a=mew int[10];
 ```
 
-## 方式三：静态初始化
+### 方式三：静态初始化
 
 **初始化数组：**
 
@@ -377,11 +377,36 @@ int a[]={2,5,6,8,89,};
 
 
 
+## 数组赋值机制
+
+- 基本类型数据赋值，这个值就是具体的数据，而且相互不影响
+
+  ```java
+  int n1=10;
+  int n2=n1;
+  n2=80;
+  System.out.println("n1="+n1);
+  System.out.println("n2="+n2);
+  ```
+
+- 数组在默认情况下是**引用传递**，赋的值是地址。
+
+  ```java
+  int[] arr1={1,2,3};
+  int[] arr2=arr1;
+  for(int i=0;i<3;i++)
+  {
+      System.out.print(arr1[i]+" ");
+  }
+  arr2[0]=10;
+  for(int i=0;i<3;i++)
+  {
+      System.out.print(arr1[i]+" ");
+  }
+  ```
 
 
-
-
-
+![image-20221222105744443](C:\Users\遇见神鹿\AppData\Roaming\Typora\typora-user-images\image-20221222105744443.png)
 
 
 
