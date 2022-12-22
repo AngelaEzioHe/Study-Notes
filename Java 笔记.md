@@ -406,7 +406,7 @@ int a[]={2,5,6,8,89,};
   ```
 
 
-![image-20221222105744443](C:\Users\遇见神鹿\AppData\Roaming\Typora\typora-user-images\image-20221222105744443.png)
+
 
 
 
